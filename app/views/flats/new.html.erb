@@ -1,0 +1,20 @@
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="bg-primary-subtle p-4 rounded shadow-sm">
+        <h1 class="text-center mb-4">Add a new flat</h1>
+        <%= simple_form_for @flat, html: { class: 'form' } do |f| %>
+          <%= f.input :name, class: 'form-control mb-3'  %>
+          <%= f.input :address, class: 'form-control mb-3'  %>
+          <%= f.input :description, class: 'form-control mb-3'  %>
+          <%= f.input :price_per_night, class: 'form-control mb-3'  %>
+          <%= f.input :number_of_guests, class: 'form-control mb-3'  %>
+          <div class="text-center">
+            <%= f.button :submit, class: "btn btn-primary mx-1" %>
+            <%= f.button :submit, class: "btn btn-danger mx-1" %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
